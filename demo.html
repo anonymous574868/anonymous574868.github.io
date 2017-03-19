@@ -30,14 +30,64 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
+This is an accompanying web page for the following paper:<br>
 
-        <h2>Abstract</h2>
+<ul>
+<li>Eita Nakamura, Kazuyoshi Yoshii, Simon Dixon<br>
+<strong>Note Value Recognition of Polyphonic Piano Music Based on Markov Random Field for Musical Scores</strong><br>
+Manuscript submitted to <em>IEEE/ACM Transactions on Audio, Speech and Language Processing</em> [arXiv:XXXX.YYYY]
+</ul>
 
-In preparation.
+<img src="images/fig_Overview_forWeb.pdf" align=right width="450" alt="Picture"/>
+<br>
+A rhythm transcription algorithm converts a MIDI performance to a music score representation.
+Our main contribution is the development of a <strong><font color="#005B50">method that can recognise the score-written quantised note lengths from an input MIDI performance</font></strong> and a result of onset quantisation.
+This serves as a postprocessing to existing onset rhythm transcription methods, which together can produce complete score information with onset and offset score times.
+
+        <h2>Source codes</h2>
+
+You can <a href="codes.html"><strong><font color="#ff0080">download source codes here</font></strong></a>.
+An onset rhythm transcription method based on metrical HMM and an evaluation tool are included.
+
+        <h2>Demonstration</h2>
+
+        <h4><font color="#0000cc">Example 1</font> (Mozart: Piano Sonata D Major KV576)</h4>
+
+        <h5>・Input performance ( <a href="audio/ex_139-1_MIDI.mp3" target="_blank">mp3</a>　<a href="audio/ex_139-1_MIDI.mid">MIDI</a> )</h5>
+        <img src="images/ex_139-1_MIDI.pdf" width="700" alt="Picture" style="background-color:white;"/>
+        <br>
+
+        <h5>・Result by HMM + MRF ( <a href="audio/ex_139-1_est.mp3" target="_blank">mp3</a>　<a href="audio/ex_139-1_est.mid">MIDI</a> )</h5>
+        <img src="images/ex_139-1_est.pdf" width="700" alt="Picture" style="background-color:white;"/>
+        <br>
+
+        <h5>・Ground truth score ( <a href="audio/GTScore_139.mp3" target="_blank">mp3</a>　<a href="audio/GTScore_139.mid">MIDI</a> )</h5>
+        <img src="images/GTScore_139.pdf" width="700" alt="Picture" style="background-color:white;"/>
+        <br>
+
+        <br>
+
+        <h4><font color="#0000cc">Example 2</font> (Beethoven: Piano Sonata No 21)</h4>
+
+        <h5>・Input performance ( <a href="audio/ex_132-3_MIDI.mp3" target="_blank">mp3</a>　<a href="audio/ex_132-3_MIDI.mid">MIDI</a> )</h5>
+        <img src="images/ex_132-3_MIDI.pdf" width="700" alt="Picture" style="background-color:white;"/>
+        <br>
+
+        <h5>・Result by HMM + MRF ( <a href="audio/ex_132-3_est.mp3" target="_blank">mp3</a>　<a href="audio/ex_132-3_est.mid">MIDI</a> )</h5>
+        <img src="images/ex_132-3_est.pdf" width="700" alt="Picture" style="background-color:white;"/>
+        <br>
+
+        <h5>・Ground truth score ( <a href="audio/GTScore_132.mp3" target="_blank">mp3</a>　<a href="audio/GTScore_132.mid">MIDI</a> )</h5>
+        <img src="images/GTScore_132.pdf" width="700" alt="Picture" style="background-color:white;"/>
+        <br>
+
+        <br>
+
 
         <h2>Test data set</h2>
 
-The used data consist of the following 60 phrases of classical piano music each performed by 3 different players (total of 180 performances).<br>
+The used data consist of the following 60 phrases of classical piano music each performed by 3 different players (total of 180 performances). Most of the performances are taken from <a href="http://www.piano-e-competition.com" target="_blank">International Piano e-Competition site</a> and <strong>segmented data could be provided upon requests</strong> (contact details are at the bottom of this page). Another list of used data for training the score model can be seen <a href="http://anonymous4721029.github.io/algorithms.html">here</a>.
+<br>
 <br>
 
         <ol>
@@ -99,15 +149,13 @@ The used data consist of the following 60 phrases of classical piano music each 
 <li> Mussorgsky: Pictures at an Exhibition, Bydlo Bar 1-20
 <li> Mussorgsky: Pictures at an Exhibition, Great Gate of Kiev Bar 97-110
 <li> Debussy: Arabesque No 1 Bar 6-9
-<li> Debussy_Arabesque_N1_M89 Debussy: Arabesque No 1 Bar 89-94
+<li> Debussy: Arabesque No 1 Bar 89-94
 <li> Rachmaninoff: Corelli Variations Coda Bar 1-4
         </ol>
 
 
-
-
         <h2>Contact</h2>
-          <a href="http://eita-nakamura.github.io">Eita Nakamura</a><br>
+          <a href="http://eita-nakamura.github.io" target="_blank">Eita Nakamura</a><br>
           Research Building No 7 Room 417, Yoshida-honmachi, Sakyo-ku, Kyoto 606-8501, Japan<br>
           <strong>e-mail:</strong> enakamura[at]sap.ist.i.kyoto-u.ac[dot]jp<br>
           <strong>phone:</strong> +81-075-753-4952<br>
@@ -118,7 +166,7 @@ The used data consist of the following 60 phrases of classical piano music each 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Maintained by Eita Nakamura　　　　(Last updated: Feb 2017)</p>
+        <p class="copyright">Maintained by Eita Nakamura　　　　(Last updated: Mar 2017)</p>
       </footer>
     </div>
 
